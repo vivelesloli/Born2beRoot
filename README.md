@@ -25,12 +25,17 @@ minlen=10 ucredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_
 vim /etc/ssh/sshd_config
 Port 4242
 PermitRootLogin no
+ssh -V
 systemctl status ssh
 apt install ufw
 ufw enable
 ufw allow 4242
 sudo ufw status
 crontab -u root -e */10 * * * * sh /home/cnavone/monitoring.sh | wall
-
 sudo adduser <username>
-  getent passwd <username>
+getent passwd <username>
+sudo apt-get install apparmor
+apt-get install apparmor-utils
+sudo apparmor_status
+- "apt-get install selinux-basics selinux-policy-default auditd"
+- "selinux-activate"

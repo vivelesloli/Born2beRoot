@@ -1,6 +1,7 @@
 # Born2beRoot
 a faire corriger
-
+installation +
+Select LVM encrypt with separated /home
 Log as root
 apt install sudo
 adduser root sudo

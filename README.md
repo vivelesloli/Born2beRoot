@@ -51,3 +51,6 @@ sudo apparmor_status
   https://www.it-connect.fr/chapitres/quest-ce-que-ssh/
   https://doc.fedora-fr.org/wiki/SSH_:_Authentification_par_cl%C3%A9#:~:text=L'authentification%20%3A%20chaque%20connexion%20SSH,'utilisateur%20(~%2Fssh%2F.
   https://qastack.fr/programming/9619362/running-a-cron-every-30-seconds
+
+  adduser cnavone sudo + reboot + test via sudo -v
+  grep "pi" /etc/group

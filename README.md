@@ -38,8 +38,6 @@ getent passwd <username>
 sudo apt-get install apparmor
 apt-get install apparmor-utils
 sudo apparmor_status
-- "apt-get install selinux-basics selinux-policy-default auditd"
-- "selinux-activate"
   
   
   https://waytolearnx.com/2019/04/difference-entre-centos-et-debian.html

@@ -54,3 +54,6 @@ sudo apparmor_status
 
   adduser cnavone sudo + reboot + test via sudo -v
   grep "pi" /etc/group
+  
+  Defaults        log_input,log_output
+Defaults        iolog_dir="/var/log/sudo"

@@ -55,3 +55,16 @@ sudo apparmor_status
   
   Defaults        log_input,log_output
 Defaults        iolog_dir="/var/log/sudo"
+
+  ssh-keygen
+  cat .ssh/id_rsa.pub
+  mkdir /home/new_user/.ssh
+  echo "key" > /home/new_user/.ssh/authorized_keys
+  /etc/ssh/sshd_config + AllowUsers ...
+  chown -R ...:... /home/../.ssh
+  chmod 0700 /home/.../.ssh
+  chmod 0600 /home/.../.ssh/authorized_key
+  /sbin/service sshd restart
+  
+  connection ( sur mon pc windows tout est ok a verifier sur mac lolilol ) 
+  
